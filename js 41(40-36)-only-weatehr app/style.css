@@ -1,0 +1,197 @@
+/* Universal Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    min-height: 100vh;
+    padding: 30px 15px;
+    background: #17181c;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Main Container */
+
+.container {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 30px !important;
+    background: #222327;
+    border: 1px solid #34353b;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Heading */
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Search Section */
+
+.userInput {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.userInput input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px !important;
+    background: #303136;
+    border: 1px solid #414249;
+    border-radius: 12px;
+    color: #ffffff;
+    outline: none;
+    font-size: 15px;
+}
+
+.userInput input::placeholder {
+    color: #a5a5ad;
+}
+
+.userInput input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+}
+
+/* Search Button */
+
+.userInput button {
+    padding: 12px 22px !important;
+    background: #38bdf8 !important;
+    color: #101820 !important;
+    border-radius: 12px !important;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.userInput button:hover {
+    background: #0ea5e9 !important;
+    transform: translateY(-2px);
+}
+
+/* Information Cards Layout */
+
+.parntDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+/* Individual Cards */
+
+.info-box {
+    min-width: 0;
+    min-height: 115px;
+    padding: 22px 18px;
+    background: #303136;
+    border: 1px solid #3d3e45;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    background: #393a40;
+    border-color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+/* Card Heading */
+
+.info-box h3 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #a5a5ad;
+    margin-bottom: 15px;
+}
+
+/* Card Values */
+
+.info-box p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+
+.span {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 576px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 23px 16px !important;
+        border-radius: 22px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .userInput {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .userInput input,
+    .userInput button {
+        width: 100%;
+    }
+
+    .parntDiv {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .info-box {
+        min-height: 105px;
+        padding: 17px 13px;
+    }
+
+    .info-box h3 {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .info-box p {
+        font-size: 17px;
+    }
+}
+
+/* Very Small Screens */
+
+@media (max-width: 350px) {
+
+    .parntDiv {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
