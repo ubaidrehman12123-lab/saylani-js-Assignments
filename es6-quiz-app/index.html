@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ES6 Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>ES6 Quiz App</h1>
+      <p id="progressText">Question 1 of 20</p>
+    </header>
+
+    <main class="quiz-box" id="quizBox">
+      <div class="top-info">
+        <span id="questionNumber">Question 1</span>
+      </div>
+
+      <h2 id="question">Question will appear here</h2>
+      <div id="options" class="options"></div>
+
+      <div class="bottom-area">
+        <div class="progress-bar">
+          <div id="progressFill"></div>
+        </div>
+        <div class="buttons">
+          <button id="previousBtn" class="secondary-btn">Previous</button>
+          <button id="nextBtn" class="primary-btn">Next</button>
+        </div>
+      </div>
+    </main>
+
+    <section class="result-box" id="resultBox">
+      <h2>Quiz Completed!</h2>
+      <p id="finalScore"></p>
+      <p id="resultMessage"></p>
+      <button id="restartBtn" class="primary-btn">Try Again</button>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

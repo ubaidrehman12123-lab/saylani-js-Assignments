@@ -67,8 +67,8 @@ console.log('Part 1: Sort Questions (Easy to Medium)');
 
 console.log('Part 2: Reduce Questions (Easy to Medium)');
 // // 1. Calculate the total price of all products.
-// const calculateTotalPrice = products.reduce((total, product) => {
-//     return total + product.price;
+// const calculateTotalPrice = products.reduce((acc, current) => {
+//     return acc += current.price
 // }, 0);
 // console.log('Calculate Total Price', calculateTotalPrice);
 // // 2. Calculate the total quantity of all products.
